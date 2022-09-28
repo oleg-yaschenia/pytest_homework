@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 import time
 
-def test_1(browser):
+def test_languages(browser):
     link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
     browser.get(link)
     try:
@@ -9,9 +9,10 @@ def test_1(browser):
     except:
         print('\nAdd to Basket button is not found')
 
+    # checking languages (ru/en/es/fr)
     assert add_to_basket in ['Добавить в корзину', 'Add to basket', 'Añadir al carrito', 'Ajouter au panier'],\
         'Add to basket is not tested language'
-    time.sleep(3)
+    time.sleep(10)
 
 
 
