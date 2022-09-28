@@ -11,7 +11,7 @@ def test_1(browser):
 
     assert add_to_basket in ['Добавить в корзину', 'Add to basket', 'Añadir al carrito', 'Ajouter au panier'],\
         'Add to basket is not tested language'
-    time.sleep(5)
+    time.sleep(3)
 
 
 
